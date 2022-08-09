@@ -8,30 +8,30 @@
     <link rel="stylesheet" href="./public/css/home.css">
 </head>
 <body>
-    <header>
+       
+    
+    <main> 
         <h1>Firma do Toguro</h1>
-    </header>
-    <main>
         <div class="flexpag">
             <div class="box">
-                Cadastre
-                <a href="" class="btn">Cadastrar</a>
+                Cadastrar Usuário
+                <a href="cadusuario.php" class="btn">Cadastrar</a>
             </div>
             <div class="box">
-                Cadastre
-                <a href="" class="btn">Cadastrar</a>
+                Cadastrar Fornecedor
+                <a href="cadforncedor.php" class="btn">Cadastrar</a>
             </div>
             <div class="box">
-                Cadastre
-                <a href="" class="btn">Cadastrar</a>
+                Cadastrar Funcionário
+                <a href="cadfuncionario.php" class="btn">Cadastrar</a>
             </div>
             <div class="box">
-                Cadastre
-                <a href="" class="btn">Cadastrar</a>
+                Cadastrar Cliente
+                <a href="cadcliente.php" class="btn">Cadastrar</a>
             </div>
             <div class="box">
-                Cadastre
-                <a href="" class="btn">Cadastrar</a>
+                Cadastrar produto
+                <a href="cadproduto.php" class="btn">Cadastrar</a>
             </div>
         </div>
     </main>
