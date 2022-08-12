@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="form-style-2">
-        <div class="form-style-2-heading">Cadastro de Usuario</div>
+        <div class="form-style-2-heading">Cadastro de Cliente</div>
             <form action="" method="post">
                 <label for="field1">
                     <span>Nome <span class="required">*</span></span>
