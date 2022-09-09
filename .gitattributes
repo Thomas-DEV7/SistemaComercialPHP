@@ -1,0 +1,7 @@
+text=auto
+
+.sql diff
+
+WebRole/Sql/Objects/dbo.Content.Table.sql →
+
+WebRole/Sql/dbo.Content.Table.sql Binary file not shown
