@@ -63,7 +63,7 @@
 
         try {
             $stmt = $conn->prepare("INSERT INTO tb_produto (nm_produto, nm_categoria, vl_produto, qt_produto, nm_empresa, nr_cnpj)
-            VALUES (:prod, :cat, :valor, :estoque, :empresa, :cnpj");
+            VALUES (:prod, :cat, :valor, :estoque, :empresa, :cnpj)");
 
             $stmt->bindParam(':prod', $produto);
             $stmt->bindParam(':cat', $cat);
