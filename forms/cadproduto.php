@@ -19,26 +19,26 @@
             <form action="" method="post">
                 <label for="field1">
                     <span>Produto <span class="required">*</span></span>
-                    <input type="text" class="input-field" name="nome" value=""/>
+                    <input type="text" class="input-field" name="produto" value=""/>
                 </label>
                 <label for="field1">
                     <span>categoria <span class="required">*</span></span>
-                    <input type="text" class="input-field" name="sobrenome" value=""/>
+                    <input type="text" class="input-field" name="cat" value=""/>
                 </label><label for="field1">
                     <span>valor <span class="required">*</span></span>
-                    <input type="number" class="input-field" name="cpf" maxlength="11" value=""/>
+                    <input type="number" class="input-field" name="valor" maxlength="11" value=""/>
                 </label>
                 </label><label for="field1">
                     <span>estoque <span class="required">*</span></span>
-                    <input type="number" class="input-field" name="rg" maxlength="11" value=""/>
+                    <input type="number" class="input-field" name="estoque" maxlength="11" value=""/>
                 </label>
                 <label for="field1">
                     <span>empresa <span class="required">*</span></span>
-                    <input type="number" class="input-field" name="cep" maxlength="8"  value=""/>
+                    <input type="number" class="input-field" name="empresa" maxlength="8"  value=""/>
                 </label>
                 <label for="field1">
                     <span>cnpj <span class="required">*</span></span>
-                    <input type="text" class="input-field" name="endereco"  value=""/>
+                    <input type="text" class="input-field" name="cnpj"  value=""/>
                 </label>
 
                 <label>
@@ -62,7 +62,7 @@
         include_once('conexao.php');
 
         try {
-            $stmt = $connection->prepare("INSERT INTO tb_produto (nm_produto, nm_categoria, vl_produto, qt_produto, nm_empresa, nr_cnpj)
+            $stmt = $conn->prepare("INSERT INTO tb_produto (nm_produto, nm_categoria, vl_produto, qt_produto, nm_empresa, nr_cnpj)
             VALUES (:prod, :cat, :valor, :estoque, :empresa, :cnpj");
 
             $stmt->bindParam(':prod', $produto);

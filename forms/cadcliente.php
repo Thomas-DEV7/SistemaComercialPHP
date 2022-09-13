@@ -79,7 +79,7 @@
         include_once('conexao.php');
 
         try {
-            $stmt = $connection->prepare("INSERT INTO tb_cliente (nm_primeiro, nm_sobrenome, nr_cpf, nr_rg, nr_cep, nr_endereco, nr_celular, nm_email, id_genero)
+            $stmt = $conn->prepare("INSERT INTO tb_cliente (nm_primeiro, nm_sobrenome, nr_cpf, nr_rg, nr_cep, nr_endereco, nr_celular, nm_email, id_genero)
             VALUES (:nome, :sobrenome, :cpf, :rg, :cep, :endereco, :tel, :email, :genero)");
 
             $stmt->bindParam(':nome', $nome);

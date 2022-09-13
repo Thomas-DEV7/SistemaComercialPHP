@@ -19,7 +19,7 @@
             </div>
             <div class="box">
                 Cadastrar Fornecedor
-                <a href="cadforncedor.php" class="btn">Cadastrar</a>
+                <a href="cadfornecedor.php" class="btn">Cadastrar</a>
             </div>
             <div class="box">
                 Cadastrar Funcionário
