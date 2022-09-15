@@ -52,13 +52,10 @@
                 <p>Email: <strong>*</strong></p>
                 <input type="text" name="email" value="" />
             </div>
-            <div class="linha">
-                <p>Email: <strong>*</strong></p>
-                <input type="text" name="email" value="" />
-            </div>
         </div>
         <div class="linha">
-        <select name="sexo" class="select-field">
+        <select name="sexo">
+            <p>sexo: <strong>*</strong></p>
             <option value="M">Macho</option>
             <option value="F">Femêa</option>
         </select>

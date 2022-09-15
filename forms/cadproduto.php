@@ -14,37 +14,25 @@
     </style>
 </head>
 <body>
-    <div class="form-style-2">
-        <div class="form-style-2-heading">Cadastro de Cliente</div>
-            <form action="" method="post">
-                <label for="field1">
-                    <span>Produto <span class="required">*</span></span>
-                    <input type="text" class="input-field" name="produto" value=""/>
-                </label>
-                <label for="field1">
-                    <span>categoria <span class="required">*</span></span>
-                    <input type="text" class="input-field" name="cat" value=""/>
-                </label><label for="field1">
-                    <span>valor <span class="required">*</span></span>
-                    <input type="number" class="input-field" name="valor" maxlength="11" value=""/>
-                </label>
-                </label><label for="field1">
-                    <span>estoque <span class="required">*</span></span>
-                    <input type="number" class="input-field" name="estoque" maxlength="11" value=""/>
-                </label>
-                <label for="field1">
-                    <span>empresa <span class="required">*</span></span>
-                    <input type="number" class="input-field" name="empresa" maxlength="8"  value=""/>
-                </label>
-                <label for="field1">
-                    <span>cnpj <span class="required">*</span></span>
-                    <input type="text" class="input-field" name="cnpj"  value=""/>
-                </label>
-
-                <label>
-                    <span> </span>
-                    <input type="submit" value="Submit" />
-                </label>
+    
+        <form action="" method="post">
+                
+                <input type="text" class="input-field" name="produto" value=""/>
+                
+                    
+                <input type="text" class="input-field" name="cat" value=""/>
+               
+                <input type="number" class="input-field" name="valor" maxlength="11" value=""/>
+                
+                
+                <input type="number" class="input-field" name="estoque" maxlength="11" value=""/>
+                
+                <input type="number" class="input-field" name="empresa" maxlength="8"  value=""/>
+                
+                <input type="text" class="input-field" name="cnpj"  value=""/>
+                
+                <input type="submit" value="Submit" />
+                
             </form>
     </div>
 <?php

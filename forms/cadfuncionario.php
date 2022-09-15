@@ -6,59 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>CADASTRO FUNCIONÁRIO</title>
-    <style>
-      *{
-        margin: 0;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-    </style>
 </head>
 <body>
-    <div class="form-style-2">
-        <div class="form-style-2-heading">Cadastro de Funcionário</div>
-            <form action="" method="post">
-                <label for="field1">
-                    <span>Nome: <span class="required">*</span></span>
-                    <input type="text" class="input-field" name="nome" value=""/>
-                </label>
-                <label for="field1">
-                    <span>Sobrenome: <span class="required">*</span></span>
-                    <input type="text" class="input-field" name="sobrenome" value=""/>
-                </label><label for="field1">
-                    <span>CPF: <span class="required">*</span></span>
-                    <input type="number" class="input-field" name="cpf" maxlength="11" value=""/>
-                </label>
-                </label><label for="field1">
-                    <span>RG: <span class="required">*</span></span>
-                    <input type="number" class="input-field" name="rg" maxlength="11" value=""/>
-                </label>
-                <label for="field1">
-                    <span>CEP: <span class="required">*</span></span>
-                    <input type="number" class="input-field" name="cep" maxlength="8"  value=""/>
-                </label>
-                <label for="field1">
-                    <span>Endereço: <span class="required">*</span></span>
-                    <input type="text" class="input-field" name="endereco"  value=""/>
-                </label>
-                <label for="field1">
-                    <span>Celular: <span class="required">*</span></span>
-                    <input type="text" class="input-field" name="tel" value=""/>
-                </label>
-                
-                <label for="field2"><span>Email: <span class="required">*</span></span>
-                    <input type="text" class="input-field" name="email" value="" />
-                </label>
-                <label for="field4"><span>Sexu:</span>
-                    <select name="sexo" class="select-field">
-                        <option value="M">Macho</option>
-                        <option value="F">Femêa</option>
-                    </select>
-                </label>
+    <header>
+        <h1>Cadastro de funcionário</h1>
+    </header>
+        <form action="" method="post">
+            <div class="linha">
+                <p>Nome: <strong>*</strong></p>
+            <input type="text" name="nome" value="" required/>
+            </div>
+            <div class="linha">
+                <p>Sobrenome: <strong>*</strong></p>
+            <input type="text" name="sobrenome" value="" required/>
 
-                <label>
-                    <span> </span>
-                    <input type="submit" value="Submit" />
-                </label>
+            </div>
+            <div class="linha">
+                <p>CPF: <strong>*</strong></p>
+            <input type="number" name="cpf" maxlength="11" value="" required/>
+
+            </div>
+            <div class="linha">
+                <p>RG: <strong>*</strong></p>
+            <input type="number" name="rg" maxlength="11" value="" required/>
+
+            </div>
+            <div class="linha">
+                <p>CEP: <strong>*</strong></p>
+            <input type="number" name="cep" maxlength="8"  value="" required/>
+
+            </div>
+            <div class="linha">
+                <p>Endereço: <strong>*</strong></p>
+            <input type="text" name="endereco"  value="" required/>
+
+            </div>
+            <div class="linha">
+                <p>Telefone: <strong>*</strong></p>
+            <input type="text" name="tel" value="" required/>
+
+            </div>
+            <div class="linha">
+                <p>Email: <strong>*</strong></p>
+            <input type="text" name="email" value="" required/>
+
+            </div>
+            <div class="linha">
+                <p>Sexo: <strong>*</strong></p> 
+                <select name="sexo">
+                    <option value="M">Macho</option>
+                    <option value="F">Femêa</option>
+                </select>
+            </div>
+            <div class="linha">
+                <input type="submit" value="Submit" id="btn"/>
+            </div>
+                
+                
+                
+                
+                
+               
+                
+                
+                
+
+                   
+
             </form>
     </div>
 <?php
