@@ -1,70 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
     <title>CADASTRO CLIENTE</title>
-    <style>
-      *{
-        margin: 0;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-    </style>
+
 </head>
 <body>
-    <div class="form-style-2">
-        <div class="form-style-2-heading">Cadastro de Cliente</div>
-            <form action="" method="post">
-                <label for="field1">
-                    <span>Nome <span class="required">*</span></span>
-                    <input type="text" class="input-field" name="nome" value=""/>
-                </label>
-                <label for="field1">
-                    <span>Sobrenome <span class="required">*</span></span>
-                    <input type="text" class="input-field" name="sobrenome" value=""/>
-                </label><label for="field1">
-                    <span>CPF: <span class="required">*</span></span>
-                    <input type="number" class="input-field" name="cpf" maxlength="11" value=""/>
-                </label>
-                </label><label for="field1">
-                    <span>RG: <span class="required">*</span></span>
-                    <input type="number" class="input-field" name="rg" maxlength="11" value=""/>
-                </label>
-                <label for="field1">
-                    <span>CEP: <span class="required">*</span></span>
-                    <input type="number" class="input-field" name="cep" maxlength="8"  value=""/>
-                </label>
-                <label for="field1">
-                    <span>Endereço: <span class="required">*</span></span>
-                    <input type="text" class="input-field" name="endereco"  value=""/>
-                </label>
-                <label for="field1">
-                    <span>Celular <span class="required">*</span></span>
-                    <input type="text" class="input-field" name="tel" value=""/>
-                </label>
+    <header>
+        <h1>Cadastro de clientes</h1>
+    </header>
+    <form action="" method="post">
+        <div class="container">
+            <div class="linha">
+                <p>Nome: <strong>*</strong></p>
+                <input type="text" name="nome" value="" />
                 
-                <label for="field2"><span>Email <span class="required">*</span></span>
-                    <input type="text" class="input-field" name="email" value="" />
-                </label>
-                <label for="field4"><span>Sexu</span>
-                    <select name="sexo" class="select-field">
-                        <option value="M">Macho</option>
-                        <option value="F">Femêa</option>
-                    </select>
-                </label>
+            </div>
+            <div class="linha">
+                <p>Sobrenome: <strong>*</strong></p>
+                <input type="text" name="sobrenome" value="" />
+            </div>
+            <div class="linha">
+                <p>CPF: <strong>*</strong></p>
+                <input type="number" name="cpf" maxlength="11" value="" />
+            </div>
+            <div class="linha">
+                <p>CPF: <strong>*</strong></p>
+                <input type="number" name="cpf" maxlength="11" value="" />
+            </div>
+            <div class="linha">
+                <p>RG: <strong>*</strong></p>
+                <input type="number" name="rg" maxlength="11" value="" />
+            </div>
+            <div class="linha">
+                <p>CEP: <strong>*</strong></p>
+                <input type="number" name="cep" maxlength="8" value="" />
+            </div>
+            <div class="linha">
+                <p>Endereço: <strong>*</strong></p>
+                <input type="text" name="endereco" value="" />
+            </div>
+            <div class="linha">
+                <p>Telefone: <strong>*</strong></p>
+                <input type="text" name="tel" value="" />
+            </div>
+            <div class="linha">
+                <p>Email: <strong>*</strong></p>
+                <input type="text" name="email" value="" />
+            </div>
+            <div class="linha">
+                <p>Email: <strong>*</strong></p>
+                <input type="text" name="email" value="" />
+            </div>
+        </div>
+        <div class="linha">
+        <select name="sexo" class="select-field">
+            <option value="M">Macho</option>
+            <option value="F">Femêa</option>
+        </select>
+        </div>
+        <div class="linha">
+            <input type="submit" value="Cadastrar" id="btn"/>
+        </div>
 
-                <label>
-                    <span> </span>
-                    <input type="submit" value="Submit" />
-                </label>
-            </form>
+        
+
+    </form>
     </div>
-<?php
+    <?php
 
-    if(!empty($_POST))
-    {
+    if (!empty($_POST)) {
         $nome = $_POST['nome'];
         $sobrenome = $_POST['sobrenome'];
         $cpf = $_POST['cpf'];
@@ -95,11 +104,10 @@
             $stmt->execute();
 
             echo "<script>alert('Cadastrado com Sucesso');</script>";
-      
-          } catch(PDOException $e) {
+        } catch (PDOException $e) {
             echo "Erro ao cadastrar: " . $e->getMessage();
-          }
-          $connection = null;
+        }
+        $connection = null;
     }
 
-?>
+    ?>
