@@ -1,1 +1,6 @@
 .sql diff
+
+git diff -a WebRole/Sql/Objects/dbo.Content
+
+.sql text
+
