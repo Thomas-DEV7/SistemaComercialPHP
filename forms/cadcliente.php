@@ -29,10 +29,6 @@
                 <input type="number" name="cpf" maxlength="11" value="" />
             </div>
             <div class="linha">
-                <p>CPF: <strong>*</strong></p>
-                <input type="number" name="cpf" maxlength="11" value="" />
-            </div>
-            <div class="linha">
                 <p>RG: <strong>*</strong></p>
                 <input type="number" name="rg" maxlength="11" value="" />
             </div>

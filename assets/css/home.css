@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .header{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+header .header img{
+    height: 5px;
+}
+strong{
+    color: #2263db;
+}
+header .header .links{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-right: 30px;
+}
+header .header details{
+    margin: 10px;
+    font-size: 20px;
+}
+header .header details li{
+    list-style: none;
+}
+header .header details li ul a{
+    text-decoration: dashed;
+    color: #fff;
+    font-size: 15px;
+}
+header .info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header .info h2, header .info p{
+margin: 10px;
+}
+.foto{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 100px;
+}
+#conexao{
+    text-decoration: dashed;
+    background: linear-gradient( to right, #2acf2a, #2263db);
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+}
+#conexao:hover{
+    background: #2263db;
+}
+#logout{
+    text-decoration: dashed;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ff0000, #f0a000);
+}
