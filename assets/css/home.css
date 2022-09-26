@@ -11,9 +11,20 @@ header .header{
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 100px;
+}
+@media (max-width: 789px) {
+    header .header{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    header .header .links{
+        justify-content: space-evenly;
+    }
 }
 header .header img{
-    height: 5px;
+    height: 100px;
+    margin-left: 30px;
 }
 strong{
     color: #2263db;

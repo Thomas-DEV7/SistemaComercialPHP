@@ -36,7 +36,7 @@
                         
                     </li>
                 </details>
-                <a href="" id="logout" onclick="inativeFunction();">Sair</a>
+                <a href="" id="logout" onclick="inativeFunction()">Sair</a>
             </div>
             <script>
                 function inativeFunction(){
@@ -55,7 +55,8 @@
             Ano de eleições <br>
             Ano que o Elon Musk vai lançar um foguete para o espaço
         </p>
-        
+        </div>
+    </div>
     </header>
     <main>
         <p>Em caso de erros de conexão clique no botão abaixo</p>
